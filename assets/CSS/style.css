@@ -1,0 +1,62 @@
+body {
+  background-color: #f8fafc; /* Light gray */
+  margin-top: 0px;
+}
+
+header {
+  padding: 3px;
+}
+
+.cover-text {
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f0b0b6c; /* Dark olivegreen */
+}
+
+#hero {
+  height: 250px;
+  background-image: url("../images/image_torrevieja_beach\ \(1\).jpg");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  border-bottom: double black 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #0f0b0b6c; /* Dark olivegreen */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dropdown {
+  background-color: #f8fafc; /* Light gray */
+}
+
+.search-button {
+  background-color: #f8fafc; /* Light gray */
+  border: none;
+}
+
+.input-search {
+  background-color: #f8fafc; /* Light gray */
+  border: none;
+  border-bottom: 1px solid #0f0b0b6c; /* Dark olivegreen */
+}
