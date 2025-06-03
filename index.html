@@ -23,45 +23,48 @@
     <link rel="stylesheet" href="assets/CSS/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg my-10 fixed-top">
+      <div class="container-fluid" id="navbar-container">
         <a href="index.html" id="logo">Torrevieja</a>
-        <!-- Bootstrap dropdown menu start-->
-        <div class="nav-items">
-          <div class="dropdown">
-            <a
-              class="btn dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+          <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">The Weather</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">The Beaches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">The Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">The social life</a>
+          </li>
             >
-              Reasons
-            </a>
-
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-          <!-- Bootstrap dropdown menu end -->
-          <div><a href="#">Feedback</a></div>
-          <div class="nav-search">
-            <input type="text" placeholder="Search..." class="input-search" />
-            <button type="submit" class="search-button">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header id="header" class="container-fluid section">
       <section id="hero">
         <div class="cover-text">
           <h1><em>Living in Torrevieja - A Great Choice</em></h1>
         </div>
       </section>
+    </header>
+    <main>
+      
     </main>
     <footer></footer>
     <!-- Font Awesome Kit link -->

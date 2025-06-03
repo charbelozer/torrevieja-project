@@ -1,62 +1,115 @@
 body {
-  background-color: #f8fafc; /* Light gray */
+  background-color: #06305a; /* Light gray */
   margin-top: 0px;
+  height: 100vh;
 }
 
 header {
-  padding: 3px;
+  width: 100%;
 }
 
 .cover-text {
   height: 150px;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0f0b0b6c; /* Dark olivegreen */
+  color: #f8fafcb9; /*  Light gray */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #hero {
+  margin-top: 55px;
   height: 250px;
+  width: 100%;
   background-image: url("../images/image_torrevieja_beach\ \(1\).jpg");
   background-size: cover;
-  position: relative;
   background-position: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(211, 195, 195, 0.9); /* Shadow effect */
 }
 
 .navbar {
-  border-bottom: double black 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   padding-left: 20px;
-}
-
-.nav-items {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  background-color: #06305a;
 }
 
 .navbar a {
-  color: #0f0b0b6c; /* Dark olivegreen */
+  color: #f8fafc; /* White */
   text-decoration: none;
   font-weight: bold;
 }
 
-.dropdown {
-  background-color: #f8fafc; /* Light gray */
+@media screen and (max-width: 576px) {
+  .navbar-toggler {
+    background-color: #f8fafc; /* Light gray */
+  }
+
+  #navbarNav {
+    background-color: #06305a; /* Dark blue */
+    border-radius: 5px;
+    border-top: solid #f8fafc 2px; /* Light gray */
+    margin-top: 5px;
+  }
+
+  /* Create padding on dropdown menu options */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+  }
+
+  .cover-text {
+    font-size: 1.2rem; /* Adjusted for smaller screens */
+    text-align: center;
+  }
 }
 
-.search-button {
-  background-color: #f8fafc; /* Light gray */
-  border: none;
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    background-color: #f8fafc; /* Light gray */
+  }
+
+  #navbarNav {
+    background-color: #06305a; /* Dark blue */
+    border-radius: 5px;
+    border-top: solid #f8fafc 2px; /* Light gray */
+    margin-top: 5px;
+  }
+
+  /* Create padding on dropdown menu options */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+  }
 }
 
-.input-search {
-  background-color: #f8fafc; /* Light gray */
-  border: none;
-  border-bottom: 1px solid #0f0b0b6c; /* Dark olivegreen */
+@media screen and (max-width: 992px) {
+  .navbar-toggler {
+    background-color: #f8fafc; /* Light gray */
+  }
+
+  #navbarNav {
+    background-color: #06305a; /* Dark blue */
+    border-radius: 5px;
+    border-top: solid #f8fafc 2px; /* Light gray */
+    margin-top: 5px;
+  }
+
+  /* Create padding on dropdown menu options */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-item:hover {
+    background-color: #ffffff; /* White */
+    border-radius: 5px;
+  }
 }
