@@ -5,26 +5,18 @@ body {
 }
 
 header {
+  display: flex;
   width: 100%;
+  justify-content: center;
+  margin-top: 90px;
 }
 
 .cover-text {
-  height: 150px;
-  display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   color: #f8fafcb9; /*  Light gray */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-#hero {
-  margin-top: 55px;
-  height: 250px;
-  width: 100%;
-  background-image: url("../images/image_torrevieja_beach\ \(1\).jpg");
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 10px rgba(211, 195, 195, 0.9); /* Shadow effect */
 }
 
 .navbar {
@@ -65,6 +57,39 @@ header {
     font-size: 1.2rem; /* Adjusted for smaller screens */
     text-align: center;
   }
+}
+
+/* Carousel section */
+.carousel-inner {
+  height: 600px; /* Adjusted height for the carousel */
+}
+
+/* Card Section */
+
+.card-section {
+  /* display: flex; */
+  height: 100vh;
+}
+
+#card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Footer */
+
+.footer-content {
+  color: #f8fafc; /* Light gray */
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 768px) {
