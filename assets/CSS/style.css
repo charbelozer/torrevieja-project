@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* adjust based on your fixed navbar height */
+}
+
 body {
   background-color: #06305a; /* Light gray */
   margin-top: 15%;
@@ -38,6 +43,18 @@ header {
 
 .information-text {
   font-family: playfair-display, serif;
+}
+
+/* Footer general styles */
+
+#footer {
+  height: 100%;
+}
+
+.footer-content {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  align-content: flex-end;
 }
 
 @media screen and (max-width: 576px) {
@@ -177,23 +194,25 @@ header {
 
 footer {
   margin-top: 100px;
-  border-top: solid 1px #f8f9fa;
+  border-top: solid 1px #f8f9fa; /* Light gray */
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #f8f9fa; /* Light gray */
 }
 
 .footer-header {
-  color: #f8fafc; /* Light gray */
+  color: #06305a; /* Dark blue */
   margin: 20px 15px;
   text-align: center;
   justify-items: center;
 }
 
 .footer-content {
-  color: #f8fafc; /* Light gray */
+  background-color: #06305a; /* Dark blue */
+  color: #f8f9fa; /* Light gray */
   padding: 20px;
   text-align: center;
 }
@@ -208,7 +227,7 @@ form {
 
 label {
   padding: 0 5px;
-  color: #f8fafc; /* Light gray */
+  color: #06305a; /* Dark blue */
 }
 
 #email-label {
@@ -216,13 +235,14 @@ label {
 }
 
 form button {
-  background-color: #f8fafc; /* Light gray */
-  color: #06305a; /* Dark blue */
+  background-color: #06305a; /* Dark blue */
+  color: #f8fafc; /* Light gray */
   border: none;
   padding: 3px 10px;
   border-radius: 5px;
   cursor: pointer;
   margin-left: 20px;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 576px) {
