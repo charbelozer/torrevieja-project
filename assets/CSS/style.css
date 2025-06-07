@@ -1,7 +1,8 @@
 body {
   background-color: #06305a; /* Light gray */
-  margin-top: 0px;
+  margin-top: 15%;
   height: 100vh;
+  font-family: playfair-display, serif;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
   align-items: center;
   justify-content: center;
   color: #f8fafcb9; /*  Light gray */
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: playfair-display, serif;
 }
 
 .navbar {
@@ -26,12 +27,17 @@ header {
   gap: 20px;
   padding-left: 20px;
   background-color: #06305a;
+  font-size: 1.3rem; /* Adjusted for better visibility */
 }
 
 .navbar a {
   color: #f8fafc; /* White */
   text-decoration: none;
   font-weight: bold;
+}
+
+.information-text {
+  font-family: playfair-display, serif;
 }
 
 @media screen and (max-width: 576px) {
@@ -61,26 +67,129 @@ header {
 
 /* Carousel section */
 .carousel-inner {
-  height: 600px; /* Adjusted height for the carousel */
+  height: 100%; /* Adjusted height for the carousel */
+}
+
+.carousel-section {
+  display: flex;
+  object-fit: fill;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10% !important;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Prevents images from overflowing */
+}
+
+.carousel-item img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover; /* Maintains aspect ratio without stretching */
+}
+
+/* Information text section */
+
+.information-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f8fafc; /* Light gray */
+  padding: 20px 50px;
+  line-height: 180%;
+}
+
+.information-text h2 {
+  /* styles the heading */
+  font-size: 2rem; /* Adjusted for better visibility */
+  margin-bottom: 20px;
+}
+
+.information-text p {
+  /* styles the paragraph */
+  font-size: 1.2rem; /* Adjusted for better readability */
+  margin-bottom: 20px;
+}
+
+.information-text a {
+  /* styles the anchor element */
+  color: #f8fafc; /* Light gray */
+  text-decoration: underline;
 }
 
 /* Card Section */
 
 .card-section {
   /* display: flex; */
-  height: 100vh;
+  height: 100%;
 }
 
 #card-row {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
+  border-radius: 0px;
+}
+
+.card {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Adjusted height for the card images */
+  object-fit: cover; /* Ensures images cover the card area */
+  border-radius: 0;
+}
+
+.card-body {
+  background: rgba(51, 183, 220, 0.297); /* Dark blue with transparency */
+}
+
+.card-text {
+  line-height: inherit;
+}
+
+/* Beach image positioning */
+
+#beach-image {
+  object-fit: cover;
+  object-position: 50% 75%; /* Centered horizontally, 75% down vertically */
+  width: 100%;
 }
 
 /* Footer */
+
+footer {
+  margin-top: 100px;
+  border-top: solid 1px #f8f9fa;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-header {
+  color: #f8fafc; /* Light gray */
+  margin: 20px 15px;
+  text-align: center;
+  justify-items: center;
+}
 
 .footer-content {
   color: #f8fafc; /* Light gray */
@@ -90,6 +199,154 @@ header {
 
 footer a {
   padding-left: 5px;
+}
+
+form {
+  margin-top: -90px;
+}
+
+label {
+  padding: 0 5px;
+  color: #f8fafc; /* Light gray */
+}
+
+#email-label {
+  padding-left: 45px;
+}
+
+form button {
+  background-color: #f8fafc; /* Light gray */
+  color: #06305a; /* Dark blue */
+  border: none;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar-toggler {
+    background-color: #f8fafc; /* Light gray */
+  }
+
+  #navbarNav {
+    background-color: #06305a; /* Dark blue */
+    border-radius: 5px;
+    border-top: solid #f8fafc 0px; /* Light gray */
+    margin-top: 5px;
+  }
+
+  /* Create padding on dropdown menu options */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+  }
+
+  .information-text {
+    padding: 20px 15px;
+  }
+
+  form {
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  #email-label,
+  #name-label {
+    padding-left: 0;
+    margin: 15px 0 5px 0;
+  }
+
+  form button {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 60px;
+  }
+
+  #name,
+  #email {
+    width: 20%;
+  }
+
+  footer {
+    gap: 90px;
+  }
+
+  .footer-header {
+    width: 100%;
+    max-width: 500px; /* Optional max width for layout control */
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    background-color: #f8fafc; /* Light gray */
+  }
+
+  #navbarNav {
+    background-color: #06305a; /* Dark blue */
+    border-radius: 5px;
+    border-top: solid #f8fafc 2px; /* Light gray */
+    margin-top: 5px;
+  }
+
+  /* Create padding on dropdown menu options */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+  }
+
+  .information-text {
+    padding: 20px 15px;
+  }
+
+  form {
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  #email-label,
+  #name-label {
+    padding-left: 0;
+    margin: 15px 0 5px 0;
+  }
+
+  form button {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 60px;
+  }
+
+  #name,
+  #email {
+    width: 60%;
+  }
+
+  footer {
+    gap: 90px;
+  }
+
+  .footer-header {
+    width: 100%;
+    max-width: 500px; /* Optional max width for layout control */
+    padding: 0 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -110,18 +367,45 @@ footer a {
     flex-direction: column;
     margin: 1%;
   }
+
+  .information-text {
+    padding: 20px 15px;
+  }
+
+  form {
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  #email-label,
+  #name-label {
+    padding-left: 0;
+    margin: 15px 0 5px 0;
+  }
+
+  form button {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 60px;
+  }
+
+  #name,
+  #email {
+    width: 60%;
+  }
+
+  footer {
+    gap: 90px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .navbar-toggler {
     background-color: #f8fafc; /* Light gray */
-  }
-
-  #navbarNav {
-    background-color: #06305a; /* Dark blue */
-    border-radius: 5px;
-    border-top: solid #f8fafc 2px; /* Light gray */
-    margin-top: 5px;
   }
 
   /* Create padding on dropdown menu options */
@@ -130,11 +414,43 @@ footer a {
     flex-direction: column;
     margin: 1%;
   }
+
+  .footer-header {
+    width: 500px;
+  }
+
+  footer {
+    gap: 50px;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .nav-item:hover {
     background-color: #ffffff; /* White */
     border-radius: 5px;
+  }
+
+  .footer-header {
+    width: 500px;
+  }
+
+  footer {
+    gap: 90px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .nav-item:hover {
+    background-color: #ffffff; /* White */
+    border-radius: 5px;
+  }
+
+  .footer-header {
+    width: 100%;
+    max-width: 500px; /* Optional max width for layout control */
+  }
+
+  footer {
+    gap: 90px;
   }
 }
