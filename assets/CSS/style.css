@@ -126,8 +126,8 @@ header {
 /* Card Section */
 
 .card-section {
-  /* display: flex; */
   height: 100%;
+  margin-top: 10%;
 }
 
 #card-row {
