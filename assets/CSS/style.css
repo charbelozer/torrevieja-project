@@ -114,6 +114,7 @@ header {
   /* styles the paragraph */
   font-size: 1.2rem; /* Adjusted for better readability */
   margin-bottom: 20px;
+  width: 80%; /* Adjusted width for better layout */
 }
 
 .information-text a {
