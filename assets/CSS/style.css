@@ -41,6 +41,12 @@ header {
   font-weight: bold;
 }
 
+.nav-item:hover,
+a.nav-item:hover {
+  background-color: #ffffff; /* White */
+  border-radius: 5px;
+}
+
 .information-text {
   font-family: playfair-display, serif;
 }
@@ -55,31 +61,6 @@ header {
   width: -webkit-fill-available;
   height: -webkit-fill-available;
   align-content: flex-end;
-}
-
-@media screen and (max-width: 576px) {
-  .navbar-toggler {
-    background-color: #f8fafc; /* Light gray */
-  }
-
-  #navbarNav {
-    background-color: #06305a; /* Dark blue */
-    border-radius: 5px;
-    border-top: solid #f8fafc 2px; /* Light gray */
-    margin-top: 5px;
-  }
-
-  /* Create padding on dropdown menu options */
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    margin: 1%;
-  }
-
-  .cover-text {
-    font-size: 1.2rem; /* Adjusted for smaller screens */
-    text-align: center;
-  }
 }
 
 /* Carousel section */
@@ -167,6 +148,10 @@ header {
   border: none;
 }
 
+.card:nth-child(even) {
+  background-color: #5487ba; /* Lighter blue for even cards */
+}
+
 .card img {
   width: 100%;
   height: 200px; /* Adjusted height for the card images */
@@ -176,10 +161,16 @@ header {
 
 .card-body {
   background: rgba(51, 183, 220, 0.297); /* Dark blue with transparency */
+  min-height: 100vh; /* Ensures the card body has a minimum height */
 }
 
 .card-text {
   line-height: inherit;
+  font-size: 1.2rem; /* Adjusted for better readability */
+}
+
+.card-title {
+  font-size: 2rem; /* Adjusted for better visibility */
 }
 
 /* Beach image positioning */
@@ -243,66 +234,6 @@ form button {
   cursor: pointer;
   margin-left: 20px;
   margin-bottom: 2rem;
-}
-
-@media screen and (min-width: 576px) {
-  .navbar-toggler {
-    background-color: #f8fafc; /* Light gray */
-  }
-
-  #navbarNav {
-    background-color: #06305a; /* Dark blue */
-    border-radius: 5px;
-    border-top: solid #f8fafc 0px; /* Light gray */
-    margin-top: 5px;
-  }
-
-  /* Create padding on dropdown menu options */
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    margin: 1%;
-  }
-
-  .information-text {
-    padding: 20px 15px;
-  }
-
-  form {
-    margin-top: -90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-  }
-
-  #email-label,
-  #name-label {
-    padding-left: 0;
-    margin: 15px 0 5px 0;
-  }
-
-  form button {
-    margin-left: 0;
-    margin-top: 20px;
-    width: 60px;
-  }
-
-  #name,
-  #email {
-    width: 20%;
-  }
-
-  footer {
-    gap: 90px;
-  }
-
-  .footer-header {
-    width: 100%;
-    max-width: 500px; /* Optional max width for layout control */
-    padding: 0 15px;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -446,11 +377,6 @@ form button {
 }
 
 @media screen and (max-width: 1200px) {
-  .nav-item:hover {
-    background-color: #ffffff; /* White */
-    border-radius: 5px;
-  }
-
   .footer-header {
     width: 500px;
   }
